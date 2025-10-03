@@ -27,7 +27,7 @@ defmodule CachexMemoize.MixProject do
       test_coverage: [
         tool: ExCoveralls
       ],
-      elixir: "~> 1.7",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
