@@ -297,7 +297,7 @@ defmodule CachexMemoize do
                             {:exit, payload}
                         end
                         put_opts = if Keyword.has_key?(memo_opts, :ttl) do
-                          [ttl: memo_opts |> Keyword.get(:ttl)]
+                          [expire: memo_opts |> Keyword.get(:ttl)]
                         else
                           []
                         end
@@ -359,7 +359,7 @@ defmodule CachexMemoize do
                             {:exit, payload}
                         end
                         put_opts = if Keyword.has_key?(memo_opts, :ttl) do
-                          [ttl: memo_opts |> Keyword.get(:ttl)]
+                          [expire: memo_opts |> Keyword.get(:ttl)]
                         else
                           []
                         end
