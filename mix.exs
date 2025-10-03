@@ -44,10 +44,10 @@ defmodule CachexMemoize.MixProject do
   defp deps do
     [
       # Testing dependencies
-      { :cachex, ">= 3.0.0 and < 4.0.0"},
+      { :cachex, ">= 4.0.0"},
       { :excoveralls, "~> 0.8", optional: true, only: [ :cover, :test ] },
       # Linting dependencies
-      { :credo, "~> 0.8", optional: true, only: [ :lint ] },
+      { :credo, "~> 1.0", optional: true, only: [ :lint ] },
       # Documentation dependencies
       { :ex_doc, "~> 0.16", optional: true, only: [ :docs, :dev ] }
     ]
